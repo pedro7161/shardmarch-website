@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — SHARDMARCH: Match 3 Heroes</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg:        #0d0f14;
+      --surface:   #161b26;
+      --border:    #252d3d;
+      --accent:    #a855f7;
+      --accent-dim:#7e3bbf;
+      --text:      #e2e8f0;
+      --muted:     #8896aa;
+      --radius:    10px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* ── layout ── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── header ── */
+    header {
+      background: linear-gradient(160deg, #2a1040 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(90deg, #e9d5ff, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 0.85rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ── back link ── */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-top: 2.5rem;
+    }
+
+    .back-link:hover { text-decoration: underline; }
+
+    /* ── content ── */
+    .content {
+      padding: 3rem 0 4rem;
+    }
+
+    .policy-section {
+      margin-bottom: 3rem;
+    }
+
+    .policy-section h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.85rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .policy-section p {
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .policy-section p:last-child { margin-bottom: 0; }
+
+    /* The global reset zeroes list padding, which would hide the markers and
+       kill the indent -- restore both so bullets actually render. */
+    .policy-section ul {
+      color: var(--muted);
+      list-style: disc;
+      margin: 0 0 0.75rem 0;
+      padding-left: 1.5rem;
+    }
+
+    .policy-section li { margin-bottom: 0.35rem; }
+
+    .policy-section li::marker { color: var(--accent-dim); }
+
+    .policy-section a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .policy-section a:hover { text-decoration: underline; }
+
+    .badge {
+      display: inline-block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── footer ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    footer p + p { margin-top: 0.4rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p>SHARDMARCH: Match 3 Heroes &mdash; Last updated: 18 September 2026</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <a class="back-link" href="index.html">&#8592; Back to SHARDMARCH</a>
+
+      <div class="content">
+
+        <!-- Overview -->
+        <div class="policy-section">
+          <h2>Overview</h2>
+          <span class="badge">&#128274; Your data stays yours</span>
+          <p>
+            This policy explains what SHARDMARCH: Match 3 Heroes handles, what it
+            does not, and what choices you have. It is written to be read.
+          </p>
+          <p>
+            The short version: <strong style="color: var(--text);">the developer collects nothing about you.</strong>
+            The game has no accounts, no sign-up and no analytics, and your progress
+            never leaves your device. The one exception is advertising: the game
+            offers optional rewarded ads supplied by Google AdMob, and Google
+            collects data in order to deliver them.
+          </p>
+        </div>
+
+        <!-- Data Storage -->
+        <div class="policy-section">
+          <h2>Data Storage</h2>
+          <p>
+            Your campaign stars, unlocked stages, castle upgrades and settings are
+            stored <strong style="color: var(--text);">locally on your device only</strong>.
+            They are never uploaded, and the developer cannot see them.
+          </p>
+          <p>
+            Your answer to the ad-consent question is also stored on the device, so
+            you are not asked again on every launch. Uninstalling the game removes
+            all of it.
+          </p>
+        </div>
+
+        <!-- What the developer collects -->
+        <div class="policy-section">
+          <h2>What the Developer Collects</h2>
+          <p>
+            Nothing. SHARDMARCH does not ask for, receive or store:
+          </p>
+          <ul>
+            <li>Your name, email address or any contact information</li>
+            <li>Any account or login of any kind</li>
+            <li>Location data</li>
+            <li>Gameplay telemetry, analytics or crash reports</li>
+            <li>Payment information &mdash; the game has no in-app purchases</li>
+          </ul>
+          <p>
+            The developer sees only aggregate, anonymous advertising earnings
+            figures provided by Google. These cannot identify any individual player.
+          </p>
+        </div>
+
+        <!-- Advertising -->
+        <div class="policy-section">
+          <h2>Advertising (Google AdMob)</h2>
+          <p>
+            The game offers <strong style="color: var(--text);">optional rewarded ads</strong>.
+            You are never required to watch one, and no part of the game is locked
+            behind them. The full campaign is playable without ever seeing an ad.
+          </p>
+          <p>When an ad is requested, Google AdMob may collect and process:</p>
+          <ul>
+            <li>Your device's advertising identifier</li>
+            <li>Device information such as model, operating system version and language</li>
+            <li>Your IP address, and the approximate region derived from it</li>
+            <li>Whether the ad was viewed or clicked</li>
+          </ul>
+          <p>
+            Google handles this data as an independent controller. Its use is governed by
+            <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and by
+            <a href="https://support.google.com/admob/answer/6128543">how Google uses data from apps that use its services</a>.
+            The developer does not receive it.
+          </p>
+        </div>
+
+        <!-- Consent -->
+        <div class="policy-section">
+          <h2>Your Consent Choice</h2>
+          <p>
+            If you are in the European Economic Area, the United Kingdom or
+            Switzerland, the game shows Google's official consent form before any ad
+            is requested, and asks your permission first.
+          </p>
+          <p>
+            This version of the game does not yet include an in-game control for
+            changing that answer afterwards. Until it does, you can:
+          </p>
+          <ul>
+            <li>Reset or delete your advertising identifier in your device settings, under Google &rarr; Ads</li>
+            <li>Clear the game's app data, which clears the stored answer so you are asked again on next launch</li>
+          </ul>
+          <p>
+            An in-game privacy option is planned for a future update, and this page
+            will be updated when it ships.
+          </p>
+        </div>
+
+        <!-- Permissions -->
+        <div class="policy-section">
+          <h2>Permissions</h2>
+          <p>
+            The game requests exactly one Android permission:
+            <strong style="color: var(--text);">internet access</strong>, used only to
+            load ads. It does not request location, camera, microphone, contacts,
+            photos or file access.
+          </p>
+        </div>
+
+        <!-- Children -->
+        <div class="policy-section">
+          <h2>Children's Privacy</h2>
+          <p>
+            SHARDMARCH is rated for teens and is not directed at children under 13.
+            It does not knowingly collect personal information from children. If you
+            believe a child has provided personal information, contact the address
+            below and it will be addressed.
+          </p>
+        </div>
+
+        <!-- Changes -->
+        <div class="policy-section">
+          <h2>Changes to This Policy</h2>
+          <p>
+            If this policy changes, the date at the top of the page changes with it.
+            Material changes will also be noted in the game's release notes on Google
+            Play.
+          </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="policy-section">
+          <h2>Contact</h2>
+          <p>
+            Questions or concerns about this policy, or about the game in general:
+          </p>
+          <p>
+            &#128231; <a href="mailto:shardmarch@outlook.com">shardmarch@outlook.com</a>
+          </p>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.container -->
+  </main>
+
+  <footer>
+    <p>&copy; 2026 SHARDMARCH. All rights reserved.</p>
+    <p><a href="index.html">Back to SHARDMARCH</a></p>
+  </footer>
+
+</body>
+</html>

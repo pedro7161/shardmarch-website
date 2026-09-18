@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHARDMARCH: Match 3 Heroes</title>
+  <meta name="description" content="A tactical match-3 RPG where you and your enemies share one board. 100 stages, hero parties, phase-shifting bosses, and no in-app purchases." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0d0f14;
+      --surface:   #161b26;
+      --border:    #252d3d;
+      --accent:    #a855f7;
+      --accent-dim:#7e3bbf;
+      --text:      #e2e8f0;
+      --muted:     #8896aa;
+      --radius:    10px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── hero ── */
+    header {
+      background: linear-gradient(160deg, #2a1040 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 5rem 0 4rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(90deg, #e9d5ff, var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    header .tagline { color: var(--text); font-size: 1.2rem; margin-bottom: 0.75rem; }
+    header .sub { color: var(--muted); max-width: 34rem; margin: 0 auto 2rem; }
+
+    .cta {
+      display: inline-block;
+      background: var(--accent);
+      color: #11061c;
+      font-weight: 700;
+      padding: 0.75rem 1.75rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+    }
+    .cta.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent-dim); margin-left: 0.5rem; }
+    .cta[aria-disabled="true"] { background: var(--surface); color: var(--muted); cursor: default; }
+
+    /* ── sections ── */
+    section { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+    section h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    section .lead { color: var(--muted); margin-bottom: 2rem; max-width: 46rem; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+    }
+    .card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--accent); }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+
+    /* ── screenshot slots ── */
+    .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+    .shot {
+      aspect-ratio: 9 / 16;
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    footer { padding: 2.5rem 0; text-align: center; color: var(--muted); font-size: 0.9rem; }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>SHARDMARCH</h1>
+      <p class="tagline">The enemy plays on your board too.</p>
+      <p class="sub">
+        A tactical match-3 RPG built on one idea: you and your enemies share a
+        single grid. Every match activates whoever owns those gems &mdash; so a
+        careless cascade hands them a turn, and a well-read board turns their own
+        move against them.
+      </p>
+      <a class="cta" aria-disabled="true" href="#">Coming soon to Google Play</a>
+      <a class="cta secondary" href="#features">See how it plays</a>
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="container">
+      <h2>One board, two sides</h2>
+      <p class="lead">
+        No invisible enemy turns. Enemies take real swaps on the same grid, hunting
+        their own gems and avoiding yours.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Your party owns the colours</h3>
+          <p>Each hero claims a gem type. Matching it damages, heals, shields and charges that hero's special. Change the party and the whole board changes meaning.</p>
+        </div>
+        <div class="card">
+          <h3>Enemies that play, not cheat</h3>
+          <p>They follow the same match-3 rules you do &mdash; then go further: locking gems, dropping blockers that split the board, draining your charge, shielding each other.</p>
+        </div>
+        <div class="card">
+          <h3>A role triangle that matters</h3>
+          <p>Guardians beat Strikers, Strikers beat Mystics, Mystics beat Guardians. Pick your target freely &mdash; it costs no move.</p>
+        </div>
+        <div class="card">
+          <h3>Special pieces, earned</h3>
+          <p>Four in a row makes a Line Clear. T and L shapes make a Bomb. Five or more makes a Color Burst. Chain them and the board does the work.</p>
+        </div>
+        <div class="card">
+          <h3>Bosses that change mid-fight</h3>
+          <p>The Red Dragon and the Necromancer Lord shift phases as their health falls, gaining abilities and telegraphing devastating casts you have a window to stop.</p>
+        </div>
+        <div class="card">
+          <h3>100 stages, 10 chapters</h3>
+          <p>Each chapter is built around one idea. Early stages teach a single concept; later ones demand you combine everything. Earn stars, upgrade your Castle, go back out stronger.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>No in-app purchases</h2>
+      <p class="lead">
+        No energy timers. No paywalls. No booster shop. The whole campaign is there
+        from the first launch. Optional rewarded ads exist if you want a boost &mdash;
+        ignore them entirely and nothing is gated. Plays offline.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Screenshots</h2>
+      <p class="lead">Coming shortly.</p>
+      <div class="shots">
+        <div class="shot">Screenshot slot 1<br />(drop a 9:16 PNG here)</div>
+        <div class="shot">Screenshot slot 2</div>
+        <div class="shot">Screenshot slot 3</div>
+        <div class="shot">Screenshot slot 4</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="mailto:shardmarch@outlook.com">shardmarch@outlook.com</a></p>
+      <p>&copy; 2026 SHARDMARCH. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
