@@ -9,7 +9,15 @@
   <meta property="og:description" content="A tactical match-3 RPG where you and your enemies share one board. 100 stages, hero parties, phase-shifting bosses, and no in-app purchases." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pedro7161.github.io/shardmarch-website/" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://pedro7161.github.io/shardmarch-website/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="A hero party of mage, archer and knight facing a red dragon, with glowing gems between them" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pedro7161.github.io/shardmarch-website/assets/og-image.jpg" />
+  <link rel="icon" href="assets/favicon.png" sizes="48x48" type="image/png" />
+  <link rel="icon" href="assets/icon-192.png" sizes="192x192" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -57,6 +65,16 @@
 
     header .tagline { color: var(--text); font-size: 1.2rem; margin-bottom: 0.75rem; }
     header .sub { color: var(--muted); max-width: 34rem; margin: 0 auto 2rem; }
+    header .hero-art {
+      display: block;
+      width: 100%;
+      max-width: 880px;
+      height: auto;
+      margin: 0 auto 2.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    }
 
     .cta {
       display: inline-block;
@@ -112,6 +130,8 @@
     <div class="container">
       <h1>SHARDMARCH</h1>
       <p class="tagline">The enemy plays on your board too.</p>
+      <img class="hero-art" src="assets/hero.jpg" width="1280" height="640"
+           alt="A hero party of mage, archer and knight facing a red dragon, with glowing gems between them" />
       <p class="sub">
         A tactical match-3 RPG built on one idea: you and your enemies share a
         single grid. Every match activates whoever owns those gems &mdash; so a
